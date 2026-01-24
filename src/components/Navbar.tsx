@@ -105,7 +105,7 @@ export default function Navbar({ isScrolled }: NavbarProps) {
               </li>
             ))}
             {/* Mobile Theme Toggle (Optional: Add for consistency) */}
-            <li className="pt-2 border-t">
+            {/* <li className="pt-2 border-t">
               <Button
                 variant="ghost"
                 size="sm"
@@ -119,7 +119,7 @@ export default function Navbar({ isScrolled }: NavbarProps) {
                 <Moon className="mr-2 h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                 Toggle Theme
               </Button>
-            </li>
+            </li> */}
           </motion.ul>
         )}
       </AnimatePresence>

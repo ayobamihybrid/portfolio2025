@@ -32,9 +32,8 @@ const experiences = [
       "Resolved complex blockers, earning recognition and bonus.",
     ],
   },
-
   {
-    title: "frontend developer",
+    title: "Frontend Developer",
     company: "Convexity",
     period: "2025-present",
     location: "Remote, Abuja, Nigeria",
@@ -47,43 +46,42 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-muted/50">
+    <section id="experience" className="py-12 sm:py-16 md:py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold mb-12 text-center"
+          className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center"
         >
           Professional Experience
         </motion.h2>
-        <div className="space-y-8 max-w-4xl mx-auto">
+        <div className="space-y-6 sm:space-y-8 max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.company}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
               viewport={{ once: true }}
             >
-           <Card className="bg-slate-800/90 backdrop-blur-md border border-white/10 text-white">
-
-                <CardHeader>
-                  <CardTitle>{exp.title}</CardTitle>
-                  <div className="flex justify-between items-center">
-                    <CardDescription className="text-lg font-semibold">
+              <Card className="bg-slate-800/90 backdrop-blur-md border border-white/10 text-white">
+                <CardHeader className="p-4 sm:p-6">
+                  <CardTitle className="text-lg sm:text-xl">{exp.title}</CardTitle>
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
+                    <CardDescription className="text-base sm:text-lg font-semibold text-gray-300">
                       {exp.company}
                     </CardDescription>
-                    <span className="text-sm opacity-75">
+                    <span className="text-xs sm:text-sm opacity-75 text-gray-400">
                       {exp.period} • {exp.location}
                     </span>
                   </div>
                 </CardHeader>
                 <Separator className="bg-white/20" />
-                <CardContent className="pt-4 space-y-2">
+                <CardContent className="p-4 sm:p-6 pt-4 space-y-2">
                   {exp.description.map((desc, i) => (
-                    <p key={i} className="text-sm opacity-90">
+                    <p key={i} className="text-xs sm:text-sm opacity-90 leading-relaxed">
                       • {desc}
                     </p>
                   ))}
