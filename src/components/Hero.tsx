@@ -52,7 +52,7 @@ export default function Hero() {
             transition={{ delay: 2.8, duration: 0.5 }}
           >
             <Button asChild size="lg" className="bg-white text-gray-900 hover:bg-gray-100 w-full sm:w-auto">
-              <Link href="/cv.pdf" download>
+              <Link href="/Ayobami-resume.pdf" download>
                 Download CV <Download className="ml-2 h-4 w-4" />
               </Link>
             </Button>
