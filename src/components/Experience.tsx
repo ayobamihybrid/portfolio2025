@@ -15,10 +15,12 @@ const experiences = [
     period: "2024 – present",
     location: "Remote, Texas, USA",
     description: [
-      "Developed secure mailing service, reducing spam by 4,000 tickets/year.",
-      "Deployed websites with 99.9% uptime, +18% user engagement.",
-      "Implemented real-time dashboards, +15% data visibility, +10% conversions.",
+      "Designed and developed a web3 application with robust Solidity smart contracts.",
+      "Integrated with Ether.js, Thirdweb, Wagmi for seamless blockchain UX.",
+      "Achieved 95%+ test coverage using Hardhat & Foundry.",
+      "Resolved complex blockers, earning recognition and bonus.",
     ],
+   
   },
   {
     title: "Frontend & Backend Developer",
@@ -26,10 +28,9 @@ const experiences = [
     period: "2025 – Present",
     location: "Remote, Los Angeles, USA",
     description: [
-      "Designed and developed a web3 application with robust Solidity smart contracts.",
-      "Integrated with Ether.js, Thirdweb, Wagmi for seamless blockchain UX.",
-      "Achieved 95%+ test coverage using Hardhat & Foundry.",
-      "Resolved complex blockers, earning recognition and bonus.",
+      "Developed secure mailing service, reducing spam by 4,000 tickets/year.",
+      "Deployed websites with 99.9% uptime, +18% user engagement.",
+      "Implemented real-time dashboards, +15% data visibility, +10% conversions.",
     ],
   },
   {
