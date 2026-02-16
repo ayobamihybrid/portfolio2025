@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 const skills = [
   { name: "Solidity", level: 90 },
   { name: "React/Next.js", level: 95 },
-  { name: "TypeScript", level: 85 },
-  { name: "TailwindCSS", level: 90 },
+  { name: "TypeScript", level: 90 },
+  { name: "TailwindCSS", level: 95 },
   { name: "Foundry/Hardhat", level: 80 },
-  { name: "Ethers.js/Wagmi", level: 85 },
-  { name: "Node.js/Express", level: 75 },
-  { name: "Vue/Nuxt", level: 70 },
-  { name: "MongoDB/Firestore", level: 70 },
+  { name: "Ethers.js/Wagmi", level: 90 },
+  { name: "Node.js/Express", level: 80 },
+  { name: "Vue/Nuxt", level: 80 },
+  { name: "MongoDB/Firestore", level: 80 },
   { name: "Git/Figma", level: 80 },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-muted/50">
+    <section id="skills" className="section-surface-alt py-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}

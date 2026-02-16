@@ -1,12 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { BriefcaseBusiness, CalendarDays, MapPin } from "lucide-react";
 
 const experiences = [
   {
@@ -20,7 +13,6 @@ const experiences = [
       "Achieved 95%+ test coverage using Hardhat & Foundry.",
       "Resolved complex blockers, earning recognition and bonus.",
     ],
-   
   },
   {
     title: "Frontend & Backend Developer",
@@ -28,9 +20,9 @@ const experiences = [
     period: "2025 – Present",
     location: "Remote, Los Angeles, USA",
     description: [
-      "Developed secure mailing service, reducing spam by 4,000 tickets/year.",
-      "Deployed websites with 99.9% uptime, +18% user engagement.",
-      "Implemented real-time dashboards, +15% data visibility, +10% conversions.",
+      "Head the frontend team to develop dynamic dashboards and user interfaces for various applications, including the cNGN token website, ensuring a seamless user experience in a web3 environment.",
+      "Implement Agile methodologies, actively participating in daily stand-ups and sprint planning to ensure alignment and timely delivery of project milestones.",
+      "Drive quality assurance by writing comprehensive unit tests with Jest and React Testing Library, improving application reliability and maintainability.",
     ],
   },
   {
@@ -41,24 +33,62 @@ const experiences = [
     description: [
       "Maintained and updated organization website for optimal performance.",
       "Collaborated on technological infrastructure solutions.",
+      "Collaborated on diverse front-end projects, actively contributing to design, development, and deployment to meet project objectives.",
+      "Participated in team meetings to contribute to project planning and execution, ensuring alignment with goals and timelines.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company: "Mular",
+    period: "2026-present",
+    location: "Remote, Lagos, Nigeria",
+    description: [
+      "Built and refined high-converting landing pages and product flows, improving clarity and user trust across key touchpoints.",
+      "Translated Figma concepts into responsive Vue interfaces with strong attention to accessibility and performance.",
+      "Partnered with product and engineering teams during sprint cycles to ship features on schedule and reduce UI rework.",
+      "Improved maintainability by organizing reusable UI patterns and cleaner component structure across front-end modules.",
+    ],
+  },
+  {
+    title: "Freelance Frontend & Backend Developer",
+    company: "Freelance",
+    period: "2025",
+    location: "Remote",
+    description: [
+      "Built complete client websites end-to-end, handling design implementation, frontend architecture, backend APIs, and deployment independently.",
+      "Developed content-managed backend systems with Strapi CMS, enabling non-technical teams to update pages, media, and structured content.",
+      "Integrated React/Next.js frontends with Strapi APIs for dynamic pages, forms, and admin-managed content blocks.",
+      "Delivered a full production website in under one month, from planning and development through launch and post-release fixes.",
     ],
   },
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-12 sm:py-16 md:py-20 bg-muted/50">
-      <div className="container mx-auto px-4">
+    <section id="experience" className="section-surface-alt py-16 sm:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center"
+          className="mb-3 text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
           Professional Experience
         </motion.h2>
-        <div className="space-y-6 sm:space-y-8 max-w-4xl mx-auto">
+
+        <motion.p
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="mx-auto mb-12 max-w-2xl text-center text-slate-600"
+        >
+          Frontend-focused roles across web3 and product teams, delivering
+          production-ready interfaces and scalable user experiences.
+        </motion.p>
+
+        <div className="relative mx-auto max-w-5xl space-y-6 before:absolute before:bottom-0 before:left-3 before:top-0 before:w-px before:bg-slate-300/80 sm:space-y-8 sm:before:left-7">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.company}
@@ -66,28 +96,38 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
               viewport={{ once: true }}
+              className="relative pl-8 sm:pl-16"
             >
-              <Card className="bg-slate-800/90 backdrop-blur-md border border-white/10 text-white">
-                <CardHeader className="p-4 sm:p-6">
-                  <CardTitle className="text-lg sm:text-xl">{exp.title}</CardTitle>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
-                    <CardDescription className="text-base sm:text-lg font-semibold text-gray-300">
-                      {exp.company}
-                    </CardDescription>
-                    <span className="text-xs sm:text-sm opacity-75 text-gray-400">
-                      {exp.period} • {exp.location}
-                    </span>
-                  </div>
-                </CardHeader>
-                <Separator className="bg-white/20" />
-                <CardContent className="p-4 sm:p-6 pt-4 space-y-2">
+              <span className="absolute left-[0.2rem] top-6 z-10 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-slate-900 shadow-sm sm:left-[1.45rem] sm:top-8" />
+              <article className="rounded-2xl border border-slate-200/80 bg-white/90 p-4 shadow-[0_20px_60px_-35px_rgba(15,23,42,0.5)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1 sm:rounded-3xl sm:p-8">
+                <div className="flex flex-col items-start gap-2 text-xs font-medium text-slate-500 sm:flex-row sm:flex-wrap sm:items-center sm:text-sm">
+                  <span className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1 text-slate-700">
+                    <BriefcaseBusiness className="h-4 w-4" />
+                    <span className="truncate">{exp.company}</span>
+                  </span>
+                  <span className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1">
+                    <CalendarDays className="h-4 w-4" />
+                    <span className="truncate">{exp.period}</span>
+                  </span>
+                  <span className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1">
+                    <MapPin className="h-4 w-4" />
+                    <span className="truncate">{exp.location}</span>
+                  </span>
+                </div>
+
+                <h3 className="mt-4 text-lg font-semibold leading-snug text-slate-900 sm:text-2xl">
+                  {exp.title}
+                </h3>
+
+                <div className="mt-4 space-y-2 sm:mt-5">
                   {exp.description.map((desc, i) => (
-                    <p key={i} className="text-xs sm:text-sm opacity-90 leading-relaxed">
-                      • {desc}
+                    <p key={i} className="text-sm leading-relaxed text-slate-700 sm:text-base">
+                      <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-slate-500 align-middle" />
+                      {desc}
                     </p>
                   ))}
-                </CardContent>
-              </Card>
+                </div>
+              </article>
             </motion.div>
           ))}
         </div>

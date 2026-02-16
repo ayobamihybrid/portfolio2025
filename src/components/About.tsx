@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-const summary = `Hi, I’m Ayobami, a Frontend/smart contract developer with a strong foundation in Backend Development. From creating seamless and dynamic user interfaces to writing smart contracts using Solidity, Foundry, wagmi, ethers etc, I’m passionate about building modern decentralized applications.
+const summary = `Hi, I’m Ayobami, a Frontend/smart contract and mobile developer with 4 years of hands-on experience building and managing innovative products that deliver exceptional user experiences. From creating seamless and dynamic user interfaces to writing smart contracts using Solidity, I’m passionate about building modern decentralized applications.
 
 Let’s connect!`;
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="section-surface py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -24,6 +24,7 @@ export default function About() {
               <Badge variant="secondary">Web3 Enthusiast</Badge>
               <Badge variant="secondary">Solidity Developer</Badge>
               <Badge variant="secondary">React/Next.js Expert</Badge>
+              <Badge variant="secondary">ReactNative/Expo Expert</Badge>
             </div>
           </div>
           <Avatar className="w-64 h-64 mx-auto md:mx-0">

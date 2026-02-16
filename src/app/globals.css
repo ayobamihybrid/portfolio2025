@@ -89,6 +89,12 @@
   .gradient-bg {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
+  .section-surface {
+    background: linear-gradient(135deg, #f5f8ff 0%, #eef3ff 50%, #e9efff 100%);
+  }
+  .section-surface-alt {
+    background: linear-gradient(135deg, #f2f6ff 0%, #eaf0ff 50%, #e3ebff 100%);
+  }
   .glass {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
