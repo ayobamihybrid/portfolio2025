@@ -102,7 +102,7 @@ export default function Contact() {
             className="mx-auto w-full max-w-xl space-y-7"
             viewport={{ once: true }}
           >
-            <h3 className="text-center text-3xl font-semibold text-neutral-900 lg:text-left">Write to me about your project</h3>
+            <h3 className="text-center text-2xl md:text-3xl font-semibold text-neutral-900 lg:text-left">Write to me about your project</h3>
 
             <label className="relative block">
               <span className="absolute -top-3 left-4 bg-[#eaf0ff] px-2 text-lg text-neutral-600">Name</span>
@@ -112,7 +112,7 @@ export default function Contact() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="h-[4.5rem] w-full rounded-2xl border-2 border-neutral-700 bg-transparent px-6 py-5 text-2xl text-neutral-800 outline-none transition-colors placeholder:text-neutral-500 focus:border-neutral-950"
+                className="h-14 md:h-18 w-full rounded-2xl border-2 border-neutral-700 bg-transparent px-6 py-5 text-lg md:text-2xl text-neutral-800 outline-none transition-colors placeholder:text-neutral-500 focus:border-neutral-950"
               />
             </label>
 
@@ -124,7 +124,7 @@ export default function Contact() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="h-[4.5rem] w-full rounded-2xl border-2 border-neutral-700 bg-transparent px-6 py-5 text-2xl text-neutral-800 outline-none transition-colors placeholder:text-neutral-500 focus:border-neutral-950"
+                className="h-14 md:h-18 w-full rounded-2xl border-2 border-neutral-700 bg-transparent px-6 py-5 text-lg md:text-2xl text-neutral-800 outline-none transition-colors placeholder:text-neutral-500 focus:border-neutral-950"
               />
             </label>
 
@@ -136,14 +136,14 @@ export default function Contact() {
                 value={project}
                 onChange={(e) => setProject(e.target.value)}
                 required
-                className="w-full resize-none rounded-2xl border-2 border-neutral-700 bg-transparent px-6 py-5 text-2xl text-neutral-800 outline-none transition-colors placeholder:text-neutral-500 focus:border-neutral-950"
+                className="w-full resize-none rounded-2xl border-2 border-neutral-700 bg-transparent px-6 py-5 text-lg md:text-2xl text-neutral-800 outline-none transition-colors placeholder:text-neutral-500 focus:border-neutral-950"
               />
             </label>
 
             <button
               type="submit"
               disabled={isSubmitting}
-              className="inline-flex items-center gap-3 rounded-3xl bg-neutral-900 px-10 py-5 text-xl font-semibold text-white transition-colors hover:bg-neutral-800 disabled:cursor-not-allowed disabled:opacity-70"
+              className="inline-flex items-center gap-3 rounded-3xl bg-neutral-900 px-6 md:px-10 py-3 md:py-5 text-lg md:text-xl font-semibold text-white transition-colors hover:bg-neutral-800 disabled:cursor-not-allowed disabled:opacity-70"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
               <Send className="h-6 w-6" />
