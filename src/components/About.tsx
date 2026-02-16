@@ -19,7 +19,7 @@ export default function About() {
         >
           <div>
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
-            <p className="text-lg leading-relaxed mb-8">{summary}</p>
+            <p className="text-lg text-black leading-relaxed mb-8">{summary}</p>
             <div className="flex flex-wrap gap-2">
               <Badge variant="secondary">Web3 Enthusiast</Badge>
               <Badge variant="secondary">Solidity Developer</Badge>
