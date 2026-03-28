@@ -7,8 +7,8 @@ const skills = [
   { name: "TailwindCSS", level: 95 },
   { name: "Foundry/Hardhat", level: 90 },
   { name: "Ethers.js/Wagmi", level: 90 },
-  { name: "Node.js/Express", level: 80 },
-  { name: "Vue/Nuxt", level: 80 },
+  { name: "Node.js/Express", level: 90 },
+  { name: "Vue/Nuxt", level: 85 },
   { name: "MongoDB/Firestore", level: 90 },
   { name: "Git/Figma", level: 90 },
 ];
