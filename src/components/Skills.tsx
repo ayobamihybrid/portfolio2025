@@ -5,12 +5,12 @@ const skills = [
   { name: "React/Next.js", level: 95 },
   { name: "TypeScript", level: 90 },
   { name: "TailwindCSS", level: 95 },
-  { name: "Foundry/Hardhat", level: 80 },
+  { name: "Foundry/Hardhat", level: 90 },
   { name: "Ethers.js/Wagmi", level: 90 },
   { name: "Node.js/Express", level: 80 },
   { name: "Vue/Nuxt", level: 80 },
-  { name: "MongoDB/Firestore", level: 80 },
-  { name: "Git/Figma", level: 80 },
+  { name: "MongoDB/Firestore", level: 90 },
+  { name: "Git/Figma", level: 90 },
 ];
 
 export default function Skills() {
