@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "Ayobami Balogun - Fullstack Web3 Developer",
   description:
     "Portfolio of Ayobami Balogun, specializing in Frontend, Smart Contracts, and Decentralized Apps.",
+  icons: {
+    icon: "/portfolio-image.jpg",
+    shortcut: "/portfolio-image.jpg",
+    apple: "/portfolio-image.jpg",
+  },
 };
 
 export default function RootLayout({
