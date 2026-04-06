@@ -9,28 +9,30 @@ Let’s connect!`;
 export default function About() {
   return (
     <section id="about" className="section-surface py-20">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-12 items-center"
+          className="mx-auto grid max-w-5xl gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(260px,360px)] lg:gap-14 md:items-center"
         >
-          <div>
-            <h2 className="text-3xl text-black font-bold mb-6">About Me</h2>
-            <p className="text-lg text-black leading-relaxed mb-8">{summary}</p>
-            <div className="flex flex-wrap gap-2">
+          <div className="text-center md:text-left">
+            <h2 className="mb-6 text-3xl font-bold text-black">About Me</h2>
+            <p className="mb-8 text-lg leading-relaxed text-black">{summary}</p>
+            <div className="flex flex-wrap justify-center gap-2 md:justify-start">
               <Badge variant="secondary">Web3 Enthusiast</Badge>
               <Badge variant="secondary">Solidity Developer</Badge>
               <Badge variant="secondary">React/Next.js Expert</Badge>
               <Badge variant="secondary">ReactNative/Expo Expert</Badge>
             </div>
           </div>
-          <Avatar className="w-64 h-64 mx-auto md:mx-0">
-            <AvatarImage src="/portfolio-image.jpg" alt="Ayobami" />
+          <div className="flex justify-center">
+            <Avatar className="h-64 w-64 lg:h-80 lg:w-80">
+            <AvatarImage src="/portfolio-image.jpg" alt="Ayobami"/>
             <AvatarFallback>AB</AvatarFallback>
-          </Avatar>
+            </Avatar>
+          </div>
         </motion.div>
       </div>
     </section>

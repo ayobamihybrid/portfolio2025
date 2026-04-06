@@ -97,7 +97,7 @@ export default function Experience() {
               viewport={{ once: true }}
               className="relative pl-8 sm:pl-16"
             >
-              <span className="absolute left-[0.2rem] top-6 z-10 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-slate-900 shadow-sm sm:left-[1.45rem] sm:top-8" />
+              <span className="absolute left-[0.125rem] top-6 z-10 inline-flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-slate-900 shadow-sm sm:left-[1.125rem] sm:top-8" />
               <article className="rounded-2xl border border-slate-200/80 bg-white/90 p-4 shadow-[0_20px_60px_-35px_rgba(15,23,42,0.5)] backdrop-blur-sm transition-transform duration-300 hover:-translate-y-1 sm:rounded-3xl sm:p-8">
                 <div className="flex flex-col items-start gap-2 text-xs font-medium text-slate-500 sm:flex-row sm:flex-wrap sm:items-center sm:text-sm">
                   <span className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1 text-slate-700">
