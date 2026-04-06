@@ -3,8 +3,8 @@ import { BriefcaseBusiness, CalendarDays, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "Smart Contract & Frontend Developer",
-    company: "For the People (TFT)",
+    title: "Smart Contract & Frontend Developer - lead developer",
+    company: "Daffy",
     period: "2024 – present",
     location: "Remote, Texas, USA",
     description: [
@@ -15,7 +15,7 @@ const experiences = [
     ],
   },
   {
-    title: "Smart Contract & Frontend Developer",
+    title: "Smart Contract & Frontend Developer - lead developer",
     company: "Pixsee",
     period: "2025 – Present",
     location: "Remote, Los Angeles, USA",
@@ -49,7 +49,7 @@ const experiences = [
     ],
   },
   {
-    title: "Freelance Frontend & Backend Developer",
+    title: "Freelance Frontend & Backend Developer - lead developer",
     company: "SEO Africa",
     period: "2025",
     location: "Remote",
