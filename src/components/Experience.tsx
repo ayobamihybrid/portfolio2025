@@ -3,26 +3,26 @@ import { BriefcaseBusiness, CalendarDays, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    title: "Frontend & Smart Contract Developer",
+    title: "Smart Contract & Frontend Developer",
     company: "For the People (TFT)",
     period: "2024 – present",
     location: "Remote, Texas, USA",
     description: [
       "Designed and developed a web3 application with robust Solidity smart contracts.",
-      "Integrated with Ether.js, Thirdweb, Wagmi for seamless blockchain UX.",
-      "Achieved 95%+ test coverage using Hardhat & Foundry.",
+      "Integrated with Thirdweb, Wagmi, privy, for seamless blockchain UX.",
+      "Achieved 99%+ test coverage using Foundry.",
       "Resolved complex blockers, earning recognition and bonus.",
     ],
   },
   {
-    title: "Frontend & Backend Developer",
+    title: "Smart Contract & Frontend Developer",
     company: "Pixsee",
     period: "2025 – Present",
     location: "Remote, Los Angeles, USA",
     description: [
-      "Head the frontend team to develop dynamic dashboards and user interfaces for various applications, including the cNGN token website, ensuring a seamless user experience in a web3 environment.",
-      "Implement Agile methodologies, actively participating in daily stand-ups and sprint planning to ensure alignment and timely delivery of project milestones.",
-      "Drive quality assurance by writing comprehensive unit tests with Jest and React Testing Library, improving application reliability and maintainability.",
+      "Head the frontend team to develop dynamic dashboards, user interfaces for the Pixsee website, ensuring a seamless user experience in a web3 environment.",
+      "Played a key role in developing and deploying smart contracts, and seamlessly integrated them with the frontend using Wagmi, Viem, and Privy.",
+      "Participate actively in stand-ups and sprint planning to ensure alignment and timely delivery of project milestones.",
     ],
   },
   {
@@ -31,10 +31,9 @@ const experiences = [
     period: "2025-present",
     location: "Remote, Abuja, Nigeria",
     description: [
-      "Maintained and updated organization website for optimal performance.",
-      "Collaborated on technological infrastructure solutions.",
       "Collaborated on diverse front-end projects, actively contributing to design, development, and deployment to meet project objectives.",
       "Participated in team meetings to contribute to project planning and execution, ensuring alignment with goals and timelines.",
+      "Maintained and updated organization website for optimal performance. Collaborated on technological infrastructure solutions.",
     ],
   },
   {
@@ -51,7 +50,7 @@ const experiences = [
   },
   {
     title: "Freelance Frontend & Backend Developer",
-    company: "Freelance",
+    company: "SEO Africa",
     period: "2025",
     location: "Remote",
     description: [
